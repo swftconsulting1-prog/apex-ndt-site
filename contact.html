@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Contact Apex NDT Consulting</title>
+<title>Contact Apex NDT Consulting Group</title>
+<meta name="description" content="Contact Apex NDT Consulting Group for Nadcap, Level III NDT, NAS 410, corrective action, and audit support." />
 
 <style>
 body {
@@ -12,28 +13,39 @@ body {
   background:#07111f;
   color:#f8fafc;
   padding:40px;
-  max-width:700px;
+  max-width:800px;
   margin:auto;
 }
-h1 { font-size:36px; }
+h1 { font-size:38px; }
 p { color:#cbd5e1; }
-input, textarea {
+label { display:block; margin-top:18px; font-weight:bold; }
+input, select, textarea {
   width:100%;
   padding:12px;
-  margin-top:10px;
-  margin-bottom:20px;
-  border-radius:6px;
-  border:none;
+  margin-top:8px;
+  border-radius:8px;
+  border:1px solid #334155;
+  background:#0f172a;
+  color:white;
 }
 button {
-  padding:12px 18px;
+  margin-top:20px;
+  padding:14px 20px;
   background:#2563eb;
   color:white;
   border:none;
-  border-radius:6px;
+  border-radius:8px;
+  font-weight:bold;
   cursor:pointer;
 }
 a { color:#60a5fa; }
+.card {
+  background:#0f172a;
+  border:1px solid #1e293b;
+  border-radius:16px;
+  padding:22px;
+  margin-top:25px;
+}
 </style>
 </head>
 
@@ -42,25 +54,50 @@ a { color:#60a5fa; }
 <h1>Contact Apex NDT Consulting Group</h1>
 
 <p>
-Request support for Nadcap, Level III services, gap assessments, or audit preparation.
+Request support for Nadcap audits, Responsible Level III services, NAS 410 compliance,
+corrective action, gap assessments, NDT procedure development, or chemical processing support.
 </p>
 
-<form action="mailto:info@apexndtconsulting.com" method="post" enctype="text/plain">
+<div class="card">
+  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
 
-<label>Name</label>
-<input type="text" name="name" required>
+    <label>Name</label>
+    <input type="text" name="name" required>
 
-<label>Email</label>
-<input type="email" name="email" required>
+    <label>Company</label>
+    <input type="text" name="company">
 
-<label>Message</label>
-<textarea name="message" rows="6" required></textarea>
+    <label>Email</label>
+    <input type="email" name="email" required>
 
-<button type="submit">Send Request</button>
+    <label>Phone</label>
+    <input type="tel" name="phone">
 
-</form>
+    <label>Service Needed</label>
+    <select name="service">
+      <option>Nadcap NDT Audit Support</option>
+      <option>Responsible Level III Services</option>
+      <option>NAS 410 Consulting</option>
+      <option>NDT Procedure Development</option>
+      <option>Corrective Action Support</option>
+      <option>Program Gap Assessment</option>
+      <option>Nadcap Chemical Processing Support</option>
+      <option>International Supplier Support</option>
+      <option>Other</option>
+    </select>
 
-<p>Or email directly: <a href="mailto:info@apexndtconsulting.com">info@apexndtconsulting.com</a></p>
+    <label>Message</label>
+    <textarea name="message" rows="7" required></textarea>
+
+    <button type="submit">Send Request</button>
+
+  </form>
+</div>
+
+<p style="margin-top:25px;">
+Or email directly:
+<a href="mailto:info@apexndtconsulting.com">info@apexndtconsulting.com</a>
+</p>
 
 <p><a href="index.html">← Back to Home</a></p>
 
